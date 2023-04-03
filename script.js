@@ -68,6 +68,7 @@ function shareQuote() {
     window.open(facebookUrl, '_blank');
 }
 
+
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
@@ -76,6 +77,7 @@ facebookBtn.addEventListener('click', shareQuote);
 
 // On Load
 getQuotes();
+
 
 
 
@@ -91,3 +93,25 @@ getQuotes();
 
 // // On Load
 // newQuote();
+
+
+// Get random Image From API
+
+// const apiUrlUnsplash = 'https://api.unsplash.com/photos/?client_id=B3yTRxHjFk2b9Fp0CFzwYwMh5UWDTS_g5OV_yXmtymI';
+// const imageToDisplay = document.getElementsByTagName('body');
+
+
+// async function getNewImage() {
+//     let randomNumber = Math.floor(Math.random() * 10);
+//     return fetch(apiUrlUnsplash)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         let allImages = data.results[randomNumber];
+//         return allImages.urls.regular;
+//     });
+// }
+
+// newQuoteBtn.addEventListener('click', async () => {
+//     let randomImage = await getNewImage();
+//     imageToDisplay.style.backgroundImage.url = randomImage;
+// });
